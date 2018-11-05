@@ -5,7 +5,7 @@ class Backer
     @backed_projects = []
   end
   def back_project(proj)
-    self.backed_projects << proj
+    self.backed_projects << proj #proj is an object of the Project Class so it has access to methods in Project Class
     proj.backers << self
   end
 end
