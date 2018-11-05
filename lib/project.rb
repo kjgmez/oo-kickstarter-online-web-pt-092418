@@ -5,7 +5,7 @@ class Project
     @backers = []
   end
   def add_backer(backer)
-    self.backers << backer
+    self.backers << backer #backer is already an object of the Backer class so has access to methods in Backer class
     backer.backed_projects << self
   end
 end
